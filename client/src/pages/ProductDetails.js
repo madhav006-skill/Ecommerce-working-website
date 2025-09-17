@@ -31,6 +31,10 @@ const ProductDetails = () => {
     }
   };
 
+
+
+
+
   // ✅ Get similar products
   const getSimilarProduct = async (pid, cid) => {
     try {
