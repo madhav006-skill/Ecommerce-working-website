@@ -2,22 +2,56 @@
 
 # dependencies
 /node_modules
+/client/node_modules
 /.pnp
 .pnp.js
 
 # testing
 /coverage
+/client/coverage
 
 # production
 /build
+/client/build
+/dist
+/client/dist
+/.next
+/client/.next
+/out
+/client/out
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+client/.DS_Store
+Thumbs.db
+client/Thumbs.db
+.idea/
+.vscode/
+
+# env files (all)
+.env
+.env.*
+*.env
+*.env.*
+client/.env
+client/.env.*
+
+# caches
+.cache/
+client/.cache/
+.parcel-cache/
+.eslintcache
+.next/cache/
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+logs/
+client/logs/
+
+# misc temp
+*.swp
+*.swo
+*.tmp
+*.bak
