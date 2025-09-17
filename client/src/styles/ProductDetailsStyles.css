@@ -1,43 +1,87 @@
 .product-details {
-  margin-top: 100px !important;
+  margin-top: 80px !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #e3e6ed 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12);
+  padding: 32px 24px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-details-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: #222;
 }
 .product-details-info h6 {
   margin-bottom: 20px !important;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3a3a6c;
 }
 .similar-products .card {
-  background-color: rgba(128, 128, 128, 0.097);
+  background: #fff;
   width: 18rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.10);
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin-bottom: 24px;
+}
+.similar-products .card:hover {
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.18);
+  transform: translateY(-4px) scale(1.03);
 }
 .similar-products .card-name-price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
 }
 .similar-products .card-price {
-  color: green;
+  color: #1db954;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 .similar-products button {
-  border-radius: 0;
   width: 100%;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #3a3a6c 0%, #1db954 100%);
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.similar-products button:hover {
+  background: linear-gradient(90deg, #1db954 0%, #3a3a6c 100%);
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.14);
 }
 .similar-products .card-text {
-  color: rgb(90, 89, 89);
+  color: #555;
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+.similar-products .card img {
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .similar-products .card img:hover {
-  transform: scale(0.9);
+  transform: scale(1.04);
+  box-shadow: 0 2px 12px rgba(60, 60, 120, 0.12);
 }
 .similar-products .card-img-top {
-  height: 300px !important;
+  height: 260px !important;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 /* ==== Global Enhancements ==== */

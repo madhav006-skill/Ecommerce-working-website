@@ -1,36 +1,97 @@
 .category {
-  flex-wrap: wrap;
+  padding: 40px 0;
   margin-top: 80px !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  animation: fadeIn 0.5s ease-out;
 }
+
+.category .category-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
 .category .card {
-  background-color: rgba(128, 128, 128, 0.097);
-  width: 18rem;
+  background: white;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-default);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+.category .card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.category .card-img-top {
+  height: 280px !important;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category .card img:hover {
+  transform: scale(1.05);
+}
+
+.category .card-body {
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .category .card-name-price {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 }
+
+.category .card-title {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 .category .card-price {
-  color: green;
+  color: var(--accent-color);
   font-weight: bold;
+  font-size: 1.2rem;
 }
-.category button {
-  border-radius: 0;
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-}
+
 .category .card-text {
-  color: rgb(90, 89, 89);
+  color: var(--text-light);
+  margin-bottom: 16px;
+  flex-grow: 1;
+  line-height: 1.6;
 }
-.category .card img:hover {
-  transform: scale(0.9);
+
+.category button {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
+  color: white;
+  border: none;
+  border-radius: 8px !important;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition-default);
+  margin-top: auto;
 }
-.category .card-img-top {
-  height: 300px !important;
+
+.category button:hover {
+  background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 100%) !important;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 /* ==== Global Enhancements ==== */
